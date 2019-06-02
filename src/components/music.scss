@@ -1,0 +1,48 @@
+@import '../variables.scss';
+
+.music-desktop {
+  display: initial;
+  margin: 1em;
+}
+
+.music-mobile {
+  display: none;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  margin: 0 1em;
+  width: calc(512px * 2 + 162px + 7em);
+}
+
+.gallery>div {
+  margin: 1em;
+}
+
+@media screen and (max-width: $sm) {
+  .music-desktop {
+    display: none;
+  }
+  
+  .music-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+  }
+  
+  .gallery {
+    display: block;
+    margin: 1em;
+    width: initial;
+  }
+
+  .gallery>div {
+    margin: 1em 0 2em;
+    max-width: 560px;
+    background: $black;
+    display: flex;
+    justify-content: center;
+  }
+}

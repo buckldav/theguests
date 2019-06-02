@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Cantata+One|Lato');
+
+// Colors
+$gold: #cda34f;
+$greenery: #373f27;
+$stem: #636b46;
+$daisy: #e9e7da;
+$black: #141414;
+
+$primaryColor: $greenery;
+$secondaryColor: $gold;
+$linkColor: $secondaryColor;
+$sidebarColor: $daisy;
+$sidebarBackground: $black;
+
+
+// Fonts
+$primaryFontFamily: "Lato", sans-serif;
+$headingFontFamily: "Cantata One", serif;
+
+// Breakpoints
+$lg: 1200px;
+$sm: 768px;
+
+// Sizes
+$sidebarWidth: 250px;
+$mobileHeaderHeight: 60px;

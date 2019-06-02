@@ -1,0 +1,14 @@
+@import "../variables.scss";
+
+table {
+  max-width: 560px;
+  width: 100%;
+}
+
+.date {
+  width: 120px;
+}
+
+.date>p {
+  margin: 0;
+}
