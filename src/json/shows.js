@@ -72,10 +72,18 @@ const ShowsList = [
       insta: null
   },
   {
-      start: new Date(2019,7,5,18,0),
-      end: new Date(2019,7,5,19,0),
+    start: new Date(2019,5,8,18,0),
+    end: new Date(2019,5,8,21,0),
+		title: "AhiMuse Jazz Night",
+		information: "Come enjoy steak and sushi at AhiMuse. We're debuting several new originals!",
+    fb: "https://www.facebook.com/events/333722820636596/",
+    insta: null
+	},
+  {
+      start: new Date(2019,7,5,19,0),
+      end: new Date(2019,7,5,20,0),
       title: "Orem Outdoor Concert Series",
-      information: "At the outdoor venue by the Orem Library",
+      information: "At the outdoor venue by the Orem Library. More details to come.",
       fb: null,
       insta: null
   }

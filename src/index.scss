@@ -175,7 +175,7 @@ section.center-vert {
 
 @media screen and (max-width: $sm) {
   section.center-vert {
-    padding: 0 1em;
+    padding: 1em;
     max-width: 560px;
     min-height: calc(100vh - 60px);
   }
