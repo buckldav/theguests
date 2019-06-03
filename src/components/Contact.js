@@ -58,7 +58,7 @@ class ContactForm extends React.Component {
         <p>
           <label>
             Message<br />
-            <textarea name="message" value={message} onChange={this.handleChange} />
+            <textarea style={{width: 300, height: 200}} name="message" value={message} onChange={this.handleChange} />
           </label>
         </p>
         <p>
@@ -70,11 +70,13 @@ class ContactForm extends React.Component {
 }
 
 const Contact = () => (
-  <section className="center-vert">
-    <h3>Contact Us</h3>
-    <p>Booking and other inquiries</p>
-    <ContactForm />
-  </section>
+  <main id="contact">
+    <section className="center-vert">
+      <h3>Contact Us</h3>
+      <p>For booking and other inquiries, send us a message below or email us at <a href="mailto:contact@theguests.band">contact@theguests.band</a>.<br />We'd love to be part of your event!</p>
+      <ContactForm />
+    </section>
+  </main>
 )
 
 export default Contact;

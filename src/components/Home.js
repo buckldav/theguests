@@ -35,10 +35,10 @@ class Home extends React.Component {
 
     const offset = window.innerWidth <= 768 ? 60 : 0;
     if (window.location.pathname.includes("about")) {
-      $('html, body').animate({scrollTop: $('#about').offset().top - offset }, 'fast');
+      $('html, body').animate({scrollTop: $('#about').offset().top - offset }, 100);
     }
     if (window.location.pathname.includes("shows")) {
-      $('html, body').animate({scrollTop: $('#shows').offset().top - offset }, 'fast');
+      $('html, body').animate({scrollTop: $('#shows').offset().top - offset }, 100);
     }    
   }
 
@@ -46,7 +46,7 @@ class Home extends React.Component {
     return (
       <>
         <div id="home-hero" style={this.state}></div>
-        <button id="home-play" onClick={this.handleVideo}><FontAwesomeIcon icon={faPlay} />PLAY VIDEO</button>
+        <button id="home-play" onClick={this.handleVideo}><FontAwesomeIcon icon={faPlay} className="pulse" />PLAY VIDEO</button>
         <PromoVideo />
         <main id="home-main">
           <About />
