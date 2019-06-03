@@ -35,10 +35,10 @@ class Home extends React.Component {
 
     const offset = window.innerWidth <= 768 ? 60 : 0;
     if (window.location.pathname.includes("about")) {
-      $('html, body').animate({scrollTop: $('#about').offset().top - offset }, 100);
+      $('html, body').scrollTop($('#about').offset().top - offset);
     }
     if (window.location.pathname.includes("shows")) {
-      $('html, body').animate({scrollTop: $('#shows').offset().top - offset }, 100);
+      $('html, body').scrollTop($('#shows').offset().top - offset);
     }    
   }
 
