@@ -21,7 +21,10 @@ main {
 
 img {
 	border-radius: 0.5em;
-	width: 100%;
+  width: 100%;
+  height: calc(100vw - 2em);
+  max-width: 360px;
+  max-height: 360px;
 }
 
 p {

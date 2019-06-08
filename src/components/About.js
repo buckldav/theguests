@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => (
   <section className="center-vert" id="about">
-    <img src={window.location.origin + "/img/band.jpg"} alt="The Guests Band" style={{maxWidth: "360px"}} />
+    <img src={window.location.origin + "/img/band.jpg"} alt="The Guests Band" />
     <p>
       The Guests are a jazz and soul band based out of Provo, Utah, playing in and around Utah County.
       From small beginnings in February 2018 playing for a friend's birthday, The Guests have played at restaurants, parties, church events, and weddings.
