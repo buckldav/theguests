@@ -78,14 +78,46 @@ const ShowsList = [
 		information: "Come enjoy steak and sushi at AhiMuse. We're debuting several new originals!",
     fb: "https://www.facebook.com/events/333722820636596/",
     insta: null
-	},
+  },
   {
-      start: new Date(2019,7,5,19,0),
-      end: new Date(2019,7,5,20,0),
-      title: "Orem Outdoor Concert Series",
-      information: "At the outdoor venue by the Orem Library. More details to come.",
-      fb: null,
-      insta: null
+    start: new Date(2019,5,22,20,0),
+    end: new Date(2019,5,22,21,0),
+    title: "Lehman Wedding",
+    information: "",
+    fb: null,
+    insta: null
+  },
+  {
+    start: new Date(2019,5,28,18,0),
+    end: new Date(2019,5,28,21,0),
+		title: "AhiMuse Jazz Night",
+		information: "Come enjoy steak and sushi at AhiMuse. New tunes every time!",
+    fb: "https://www.facebook.com/events/2450367911668077/",
+    insta: null
+  },
+  {
+    start: new Date(2019,6,12,18,0),
+    end: new Date(2019,6,12,21,0),
+		title: "AhiMuse Jazz Night",
+		information: "Come enjoy steak and sushi at AhiMuse. New tunes every time!",
+    fb: "https://www.facebook.com/events/2450367911668077/",
+    insta: null
+  },
+  {
+    start: new Date(2019,6,26,18,0),
+    end: new Date(2019,6,26,21,0),
+		title: "AhiMuse Jazz Night",
+		information: "Come enjoy steak and sushi at AhiMuse. New tunes every time!",
+    fb: "https://www.facebook.com/events/2450367911668077/",
+    insta: null
+  },
+  {
+    start: new Date(2019,7,5,19,0),
+    end: new Date(2019,7,5,20,0),
+    title: "Orem Summer Concert Series",
+    information: "Free outdoor concert at Center Stage by the Orem Library! We're featuring our original tunes mixed in with some classics.",
+    fb: "https://www.facebook.com/events/472091183577099/",
+    insta: null
   }
 ]
 
