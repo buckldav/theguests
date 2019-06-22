@@ -1,6 +1,8 @@
 import React from 'react'
 import $ from 'jquery'
 
+const VIDEO_WIDTH = 448;
+
 class FacebookVideo extends React.Component {
   state = {
     width: 0,
@@ -10,7 +12,8 @@ class FacebookVideo extends React.Component {
   }
 
   onResize() {
-    if (!this.state.isMobile) {
+    let containerWidth = $("#container").width();
+    if (!this.state.isMobile && containerWidth < VIDEO_WIDTH) {
       document.location.reload();
     }
   }
@@ -28,7 +31,8 @@ class FacebookVideo extends React.Component {
     if (!isMobile) {
       containerWidth -= 17; // scrollbar width of desktop browsers
     }
-    if (containerWidth < 560) {
+
+    if (containerWidth < VIDEO_WIDTH) {
       let width = this.props.vertical ? 315 : containerWidth;
       let height = this.props.vertical ? 560 : containerWidth * 288 / 512;
       this.setState({
@@ -38,18 +42,15 @@ class FacebookVideo extends React.Component {
         isMobile: isMobile
       })
     } else {
-      if (containerWidth < 1200) {
-        containerWidth = 1200;
-      }
-      let width = this.props.vertical ? containerWidth * 162 / 1314 : containerWidth * 512 / 1314;
-      let height = containerWidth * 288 / 1314;
+      let width = this.props.vertical ? 288 : VIDEO_WIDTH;
+      let height = this.props.vertical ? 512 : 252;
       this.setState({
         width: Math.round(width),
         className: this.props.vertical ? "vertical" : "horizontal",
         height: Math.round(height),
         isMobile: isMobile
       })
-    }
+    }  
   }
 
   render() {

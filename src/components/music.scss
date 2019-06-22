@@ -1,5 +1,25 @@
 @import '../variables.scss';
 
+#music {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 0;
+}
+
+.music-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 928px;
+}
+
+.music-header>div {
+  padding: 3em;
+}
+
 .music-desktop {
   display: initial;
   margin: 1em;
@@ -57,11 +77,26 @@
   }
 }
 
+@media screen and (max-width: $lg) {
+  #music {
+    align-items: flex-start;
+  }
+}
+
 @media screen and (max-width: $md) {
+  #music {
+    align-items: center;
+  }
+
   .music-desktop {
     display: none;
   }
   
+  .music-header {
+    flex-direction: column;
+    max-width: $xs;
+  }
+
   .music-mobile {
     display: flex;
     flex-direction: column;
@@ -76,7 +111,7 @@
 
   .gallery>div {
     margin: 1em 0 2em;
-    max-width: 560px;
+    max-width: $xs;
     display: flex;
     justify-content: center;
   }
@@ -88,8 +123,22 @@
   }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: $xs) {
+  #music,
   .music-mobile {
     background: $black;
+  }
+
+  #music>* {
+    color: $daisy;
+  }
+
+  .music-header,
+  .music-header iframe {
+    width: 100%;
+  }
+
+  .gallery {
+    margin: 0;
   }
 }
