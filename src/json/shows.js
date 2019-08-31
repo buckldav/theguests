@@ -118,6 +118,14 @@ const ShowsList = [
     information: "Free outdoor concert at Center Stage by the Orem Library! We're featuring our original tunes mixed in with some classics.",
     fb: "https://www.facebook.com/events/472091183577099/",
     insta: null
+  },
+  {
+    start: new Date(2019,8,5,17,0),
+    end: new Date(2019,8,5,19,0),
+    title: "BYU Outdoor Concert",
+    information: "We're playing originals and covers for two hours outside the Wilkinson Center at BYU. Come by to say hi and pick up a CD!",
+    fb: "https://www.facebook.com/events/2343357275929895/",
+    insta: null
   }
 ]
 

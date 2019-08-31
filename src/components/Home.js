@@ -3,6 +3,7 @@ import $ from 'jquery'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay } from '@fortawesome/free-solid-svg-icons'
 import PromoVideo from './PromoVideo'
+import { AlbumModal } from './Album'
 
 import './home.scss'
 import About from './About';
@@ -10,7 +11,13 @@ import Shows from './Shows';
 
 class Home extends React.Component {
 
-  state = {}
+  state = {
+    modalDisplay: "",
+  }
+
+  handleModal = event => {
+    this.setState({modalDisplay: ""});
+  }
 
   handleVideo = event => { 
     $("#promo-video").addClass("play");
@@ -39,7 +46,13 @@ class Home extends React.Component {
     }
     if (window.location.pathname.includes("shows")) {
       $('html, body').scrollTop($('#shows').offset().top - offset);
-    }    
+    }
+    
+    setTimeout(() => {
+      if (window.location.pathname === "/") {
+        this.setState({modalDisplay: "show"});
+      }
+    }, 2000);
   }
 
   render() {
@@ -52,6 +65,7 @@ class Home extends React.Component {
           <About />
           <Shows />
         </main>
+        <AlbumModal className={this.state.modalDisplay} onClick={this.handleModal}/>
       </>
     )      
   }

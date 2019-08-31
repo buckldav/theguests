@@ -1,23 +1,28 @@
 import React from 'react'
 import {FacebookVideos1, FacebookVideos2, FacebookVideos3} from '../json/facebookVideos'
 import FacebookVideo from './FacebookVideo'
+import { Album } from './Album'
 
 import './music.scss';
 
 const Music = () => (
   <main id="music">
+    <section>
+      
+    </section>
     <section className="music-header">
       <div>
         <h1>Music</h1>
+        <h4>EP: Mocktail Party</h4>
         <p>
-          Here are some of our tunes. 
-          For more, visit our <a href="https://www.facebook.com/theguestsjazz">facebook page</a>. 
+          Our first EP "Mocktail Party" is out! Take a listen in this Spotify Player or visit any of the links below for streaming and purchasing.
         </p>
+        <Album />
         <p>
-          We were recently featured on <a href="https://www.coldhousestudio.com/">Cold House Studio</a>'s 2019 Collab Album featuring artists from Provo, Utah (Track 5: "Stay Awhile").
+          For more tunes, visit our <a href="https://www.facebook.com/theguestsjazz">facebook page</a>. 
         </p>
       </div>
-      <iframe title="Cold House Album" width="448" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/806886270&color=%23323236&auto_play=false&hide_related=false&show_comments=true&show_user=false&show_reposts=false&show_teaser=true&visual=false"></iframe>
+      <iframe src="https://open.spotify.com/embed/album/1yVg3akb3JKMtpJ5dhaGDg" title="Mocktail Party" width="448" height="400" scrolling="no" frameborder="no" allowtransparency="true" allow="encrypted-media"></iframe>
     </section>
     <section className="music-desktop">
       <div className="gallery">
