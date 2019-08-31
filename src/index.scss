@@ -111,16 +111,19 @@ section.center-vert {
 }
 
 #album-modal section {
-  max-width: 100%;
-  max-height: 100%;
+  margin-right: 1em;
+  max-width: 100vmin;
+  max-height: 100vmin;
   width: 600px;
   height: 600px;
   color: $daisy;
-  background: url("https://theguests.band/img/mocktail_ep.png") $black;
+  background: url("https://theguests.band/img/mocktail_ep.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   padding: 24px;
-  -webkit-box-shadow: inset 0px 50px 100px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: inset 0px 50px 100px 0px rgba(0,0,0,0.75);
-  box-shadow: inset 0px 50px 100px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: inset 0px 200px 100px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 200px 100px 0px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 200px 100px 0px rgba(0,0,0,0.75);
 }
 
 #container {
@@ -230,6 +233,10 @@ section.center-vert {
   #album-modal {
     left: 0;
     width: 100vw;
+  }
+
+  #album-modal section {
+    margin: 0;
   }
 
   #contact {

@@ -15,7 +15,7 @@ const AlbumModal = props => (
       <button onClick={props.onClick} style={{float: "right", fontSize: "150%", margin: "-24px -24px 0 0", padding: "0.5em"}}>&#215;</button>
       <p>Our first EP "Mocktail Party" is out! Visit any of the links below for streaming and purchasing.</p>
       <Album />
-      <iframe style={{display: "block", margin: "1em auto"}} src="https://open.spotify.com/embed/album/1yVg3akb3JKMtpJ5dhaGDg" title="Mocktail Party" width="275" height="80" scrolling="no" frameborder="no" allowtransparency="true" allow="encrypted-media"></iframe>
+      <iframe style={{display: "block", margin: "1em auto"}} src="https://open.spotify.com/embed/album/1yVg3akb3JKMtpJ5dhaGDg" title="Mocktail Party" width="275" height="80" scrolling="no" frameBorder="no" allowtransparency="true" allow="encrypted-media"></iframe>
     </section>
   </main>
 )
