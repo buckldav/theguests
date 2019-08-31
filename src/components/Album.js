@@ -4,13 +4,13 @@ const Album = props => (
   <div style={{width: "100%", textAlign: "center"}}>
     <a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/album/1yVg3akb3JKMtpJ5dhaGDg">Spotify</a>&nbsp;&nbsp;
     <a target="_blank" rel="noopener noreferrer" href="https://music.apple.com/us/album/mocktail-party-ep/1478306883">Apple Music</a>&nbsp;&nbsp;
-    <a target="_blank" rel="noopener noreferrer" href="https://store.cdbaby.com/cd/theguests">YouTube</a>&nbsp;&nbsp;
-    <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PLexC3HEaw47smETKePF0zv8UUPyx-7vzQ">CDBaby</a>
+    <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PLexC3HEaw47smETKePF0zv8UUPyx-7vzQ">YouTube</a>&nbsp;&nbsp;
+    <a target="_blank" rel="noopener noreferrer" href="https://store.cdbaby.com/cd/theguests">CDBaby</a>
   </div>
 )
 
 const AlbumModal = props => (
-  <main id="album-modal" className={props.className}>
+  <main id="album-modal" className={props.className} onClick={props.onClick}>
     <section>
       <button onClick={props.onClick} style={{float: "right", fontSize: "150%", margin: "-24px -24px 0 0", padding: "0.5em"}}>&#215;</button>
       <p>Our first EP "Mocktail Party" is out! Visit any of the links below for streaming and purchasing.</p>

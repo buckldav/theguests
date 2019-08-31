@@ -91,13 +91,23 @@ section.center-vert {
   justify-content: center;
   align-items: center;
   background: $modalOverlay;
-  transition: opacity 250ms ease-in-out;
 }
 
 #album-modal.show {
   display: flex;
   opacity: 1;
-  animation: modal 250ms ease-in-out;
+  -webkit-animation: modal 500ms ease-in-out;
+  animation: modal 500ms ease-in-out;
+}
+
+@-webkit-keyframes modal {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes modal {
