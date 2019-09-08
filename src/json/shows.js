@@ -120,10 +120,10 @@ const ShowsList = [
     insta: null
   },
   {
-    start: new Date(2019,8,5,17,0),
-    end: new Date(2019,8,5,19,0),
-    title: "BYU Outdoor Concert",
-    information: "We're playing originals and covers for two hours outside the Wilkinson Center at BYU. Come by to say hi and pick up a CD!",
+    start: new Date(2019,8,12,17,0),
+    end: new Date(2019,8,12,19,0),
+    title: "BYU Wilk Terrace Concert",
+    information: "We're playing originals and covers for two hours by the CougarEat at BYU for the Rollins Center Kickoff. Come by to say hi and pick up a CD!",
     fb: "https://www.facebook.com/events/2343357275929895/",
     insta: null
   }
