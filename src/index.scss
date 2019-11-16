@@ -30,6 +30,10 @@ img {
 p {
   text-align: center;
 }
+p.left {
+  text-align: left;
+  width: 100%;
+}
 
 label {
   font-style: italic;
@@ -223,6 +227,14 @@ section.center-vert {
   cursor: pointer;
 }
 
+#terms {
+  margin: 2em 0;
+}
+
+#terms ol {
+  margin-left: -1em;
+}
+
 @media screen and (min-width: $lg) {
 
 }
@@ -249,7 +261,7 @@ section.center-vert {
     margin: 0;
   }
 
-  #contact {
+  #contact, #terms {
     margin-top: 90px;
   }
 

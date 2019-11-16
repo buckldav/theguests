@@ -73,8 +73,8 @@ const Contact = () => (
   <main id="contact">
     <section className="center-vert">
       <h3>Contact Us</h3>
-      <p>For booking and other inquiries, send us a message below or email us at <a href="mailto:contact@theguests.band">contact@theguests.band</a>.<br />We'd love to be part of your event!</p>
-      <ContactForm />
+      <p>For booking and other inquiries, send us a message below or email us at <a href="mailto:contact@theguests.band">contact@theguests.band</a>.<br />We'd love to be part of your event!<br /><i>NOTE: All bookings are subject to our <a target="_blank" rel="noopener noreferrer" href="/terms">terms</a>.</i></p>
+      <ContactForm />      
     </section>
   </main>
 )

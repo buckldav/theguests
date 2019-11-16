@@ -3,6 +3,7 @@ import MainLayout from './layout/MainLayout';
 import Music from './components/Music';
 import Contact from './components/Contact';
 import Home from './components/Home';
+import Terms from './components/Terms';
 
 import { BrowserRouter, Route } from "react-router-dom";
 
@@ -17,6 +18,7 @@ function App() {
     <>
       <MainLayout>
         <BrowserRouter>
+          <Route exact path="/terms" component={Terms} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/music" component={Music} />
           <Route exact path="/shows" component={Home} />
