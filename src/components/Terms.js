@@ -9,6 +9,7 @@ const Terms = () => (
         <li>The Performer is a professional entertainment group known as “The Guests”.</li>
         <li>The Client wishes to engage the Performer subject to the terms and conditions as follows:</li>
       </ol>
+      <p class="left"><strong>NOTE: If the Client provides their own contract upon booking, the Performer will adhere to the standards of the Client should they override any of the following:</strong></p>
       <p class="left"><strong>IN CONSIDERATION OF</strong> and as a condition of the Client hiring the Performer and other valuable consideration, the receipt and sufficiency of which consideration is acknowledged here, the parties to these terms agree as follows:</p>
       <ol>
         <li>	
