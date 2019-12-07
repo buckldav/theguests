@@ -126,6 +126,22 @@ const ShowsList = [
     information: "We're playing originals and covers for two hours by the CougarEat at BYU for the Rollins Center Kickoff. Come by to say hi and pick up a CD!",
     fb: "https://www.facebook.com/events/2343357275929895/",
     insta: null
+  },
+  {
+    start: new Date(2019,11,7,19,0),
+    end: new Date(2019,11,7,20,0),
+    title: "Provo Outdoor Christmas Concert",
+    information: "A festive outdoor Christmas set featuring original jazz arrangements of classic holiday songs. This is in conjunction with the Provo Christmas Market. Bring the family!",
+    fb: "https://www.facebook.com/events/444805256240537/",
+    insta: null
+  },
+  {
+    start: new Date(2019,11,20,18,0),
+    end: new Date(2019,11,20,20,0),
+    title: "Town Hall Christmas Celebration",
+    information: "",
+    fb: null,
+    insta: null
   }
 ]
 
